@@ -2,11 +2,13 @@
 # Files2Folders
 
 **Author:** Andrea Mele
+
 **E-mail:** andme44@gmial.com
 
 **Websites:**
-http://www.github.com/AndreaMele
-http://www.artstation.com/AndreaMele
+> http://www.github.com/AndreaMele
+
+> http://www.artstation.com/AndreaMele
 
 *Takes all files (in all sub/directories), creates directories out of filenames. Handles duplicate filenames and clean up.*
 
