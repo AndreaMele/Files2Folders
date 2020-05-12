@@ -10,7 +10,9 @@
 
 > http://www.artstation.com/AndreaMele
 
+
 *Takes all files (in all sub/directories), creates directories out of filenames. Handles duplicate filenames and clean up.*
+
 
 **Files 2 Folder Features**
 - [x] Takes all files and puts them into folders using the files' name.
