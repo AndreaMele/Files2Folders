@@ -31,6 +31,8 @@ def f2f():
         print("Temp Dir already exists, cannot proceed")
         print("Exiting")
         sys.exit()
+# --- Tree Log File
+    os.system("tree /a /f > Logs.txt")
 # ----- Dealing with Temp Directory
     print("____________")
     if not os.path.exists(tempDir):
@@ -111,8 +113,11 @@ def f2f():
         tempFolder = os.path.join(tempDir, tempFolderName)
         shutil.move(tempFolder, cDir)
     # Removing empty temp Dir
-    shutil.rmtree(tempDirList)
+    shutil.rmtree(tempDir)
     print("Removed : ", tempDir)
+# --- Tree Log File
+    os.rename(r"Logs\Logs.txt", r"Logs\Before.txt")
+    os.system(r"tree /a /f > .\Logs\After.txt")
     print("\n\n\t\tall done.")
 
 def main():
