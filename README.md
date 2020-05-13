@@ -19,6 +19,7 @@
 - [x] Handles same filenames.
 - [x] Sort directories.
 - [x] Cleans up previous files.
+- [x] Logs Changes to files.
 
 ## When to Use
 
