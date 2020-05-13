@@ -97,22 +97,21 @@ def f2f():
                         except:
                             print("Error in Else")
                     vNum += 1
-    # Clean up
+    # Clean up old paths
+    print("_____ CLEAN UP ____")
     for root, dirs, files in os.walk(cDir, topdown=True):
         exclude = tempDir
         dirs[:] = [d for d in dirs if d not in exclude]
-        print("_____ CLEAN UP ____")
         for dir in dirs:
             shutil.rmtree(dir)
             print("Removed : ", dir)
     # Moving files back to main directory
-    files = os.listdir(tempDir)
-    print(" Current Dir : ", cDir)
-    print(" Temp Dir : ", tempDir)
-    for f in files:
-        shutil.copytree(tempDir, cDir, dirs_exist_ok=True)
-        print(f)
-    shutil.rmtree(tempDir)
+    tempDirList = os.listdir(tempDir)
+    for tempFolderName in tempDirList:
+        tempFolder = os.path.join(tempDir, tempFolderName)
+        shutil.move(tempFolder, cDir)
+    # Removing empty temp Dir
+    shutil.rmtree(tempDirList)
     print("Removed : ", tempDir)
     print("\n\n\t\tall done.")
 
