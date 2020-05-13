@@ -19,7 +19,7 @@
 - [x] Handles same filenames.
 - [x] Sort directories.
 - [x] Cleans up previous files.
-- [x] Logs Changes to files.
+- [x] Logs Changes to files saved in \Logs\ folder.
 
 ## When to Use
 
