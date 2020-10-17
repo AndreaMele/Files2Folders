@@ -44,7 +44,7 @@ Click **Start** > **Run** , Type:
 
 Navigate to script location, Type:
 
-    cd /d D:\Media\
+    cd /d D:\Movies\
 
 Start the script, Type:
 
