@@ -2,7 +2,7 @@
 # E-mail: andme44@gmial.com
 # Websites: 
 # http://www.github.com/AndreaMele
-# http://www.artstation.com/AndreaMee
+# http://www.artstation.com/AndreaMele
 # Project: Files 2 Folders
 """
 My scipt for dealing with Radarr Bulk Import
